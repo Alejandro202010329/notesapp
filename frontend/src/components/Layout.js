@@ -1,14 +1,15 @@
 import React from 'react'
-
-const Layout = () => {
+import Header from './Header'
+const Layout = (props) => {
   return (
-    <div className="container dark">
-    <div className="app">
-    <Header/>
-    {props.children}
-    </div>
-  </div>
+    
+     <div className="container dark">
+        <div className="app">
+        <Header/>
+        {props.children}
+        </div>
+      </div>
+    
   )
 }
-
 export default Layout
